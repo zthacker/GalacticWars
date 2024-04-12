@@ -24,7 +24,9 @@ add_executable(GalacticWars main.cpp
         Core/System.h
         Core/SystemManager.h
         Core/Coordinator.h
-        Core/EventManager.h
-        Core/Event.h)
+        Systems/MovementSystem.h
+        Systems/MovementSystem.cpp
+        Components/Inputs.h
+)
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2 SDL2_image)

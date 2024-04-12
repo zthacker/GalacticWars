@@ -63,6 +63,13 @@ build CMakeFiles/GalacticWars.dir/Game.cpp.obj: CXX_COMPILER__GalacticWars_unsca
   OBJECT_DIR = CMakeFiles\GalacticWars.dir
   OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
 
+build CMakeFiles/GalacticWars.dir/Systems/MovementSystem.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/Systems/MovementSystem.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\Systems\MovementSystem.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
+  OBJECT_DIR = CMakeFiles\GalacticWars.dir
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir\Systems
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target GalacticWars
@@ -71,7 +78,7 @@ build CMakeFiles/GalacticWars.dir/Game.cpp.obj: CXX_COMPILER__GalacticWars_unsca
 #############################################
 # Link the executable GalacticWars.exe
 
-build GalacticWars.exe: CXX_EXECUTABLE_LINKER__GalacticWars_Debug CMakeFiles/GalacticWars.dir/main.cpp.obj CMakeFiles/GalacticWars.dir/Game.cpp.obj
+build GalacticWars.exe: CXX_EXECUTABLE_LINKER__GalacticWars_Debug CMakeFiles/GalacticWars.dir/main.cpp.obj CMakeFiles/GalacticWars.dir/Game.cpp.obj CMakeFiles/GalacticWars.dir/Systems/MovementSystem.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lSDL2main  -lSDL2  -lSDL2_image  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/libs/SDL/lib/x64   -LC:/libs/SDL_image/lib/x64

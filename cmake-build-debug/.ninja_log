@@ -1,11 +1,15 @@
 # ninja log v5
-7	942	7345762580243754	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
-963	1037	7345762581179719	GalacticWars.exe	f9dc528aa535c46f
-3	963	7345762580463740	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
-3	1146	7345830860636274	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
-9	1158	7345830860751858	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
-2	990	7345831067549702	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
-6	1062	7345831068274700	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
-2	911	7345831581105884	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
-6	1123	7345831583216455	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
 1123	1246	7345831584419877	GalacticWars.exe	f9dc528aa535c46f
+6	1123	7345831583216455	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
+2	911	7345831581105884	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
+0	144	7345884269770172	build.ninja	f3b01165a281eb7b
+6	1234	7345885459429771	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
+10	1011	7345885580258825	CMakeFiles/GalacticWars.dir/Systems/MovementSystem.cpp.obj	527a14374f8b259
+3	1312	7345885583269879	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
+8	1476	7345885584888082	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
+2	1148	7345885818538422	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
+1148	1560	7345885822621471	GalacticWars.exe	557cd2f8a62dc384
+3	1084	7345886287329470	CMakeFiles/GalacticWars.dir/Systems/MovementSystem.cpp.obj	527a14374f8b259
+1084	1514	7345886291606183	GalacticWars.exe	557cd2f8a62dc384
+3	1215	7345886722374969	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
+1215	1637	7345886726573464	GalacticWars.exe	557cd2f8a62dc384

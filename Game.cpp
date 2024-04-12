@@ -4,16 +4,17 @@
 
 #include "Game.h"
 #include "defs.h"
+#include "Components/Transform.h"
 
-Coordinator gCoordinator;
+extern Coordinator gCoordinator;
 
 Game::Game() {
 
-    gCoordinator.Init();
     initializeSDL();
+    initializePlayer();
 
 
-    m_gameRunning = true;
+    m_is_running = true;
 
 }
 
@@ -36,3 +37,15 @@ void Game::initializeSDL() {
 
     IMG_Init(IMG_INIT_PNG | IMG_INIT_JPG);
 }
+
+void Game::initializePlayer() {
+    Entity entity = gCoordinator.CreateEntity();
+    gCoordinator.AddComponent(entity, Transform{Vec2{100, 100}});
+    
+}
+
+void Game::update() {
+    
+}
+
+

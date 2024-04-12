@@ -18,11 +18,26 @@ class Game {
 public:
     Game();
 
+    void update();
+    void render();
+    void read_input()
+    {
+        SDL_Event sdl_event;
+        SDL_PollEvent(&sdl_event);
+        const Uint8* keystates = SDL_GetKeyboardState(NULL);
 
-    bool m_gameRunning;
+        if (keystates[SDL_SCANCODE_ESCAPE] || sdl_event.type == SDL_QUIT) {
+            m_is_running = false;
+        }
+    }
+
+    bool m_is_running;
 private:
 
     void initializeSDL();
+    void initializePlayer();
+
+
 
     SDL_Window* m_window;
     SDL_Renderer* m_renderer;

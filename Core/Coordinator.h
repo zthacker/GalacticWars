@@ -5,11 +5,10 @@
 #ifndef GALACTICWARS_COORDINATOR_H
 #define GALACTICWARS_COORDINATOR_H
 
-#endif //GALACTICWARS_COORDINATOR_H
+
 
 #include "ComponentManager.h"
 #include "EntityManager.h"
-#include "EventManager.h"
 #include "SystemManager.h"
 #include "Types.h"
 #include <memory>
@@ -22,7 +21,6 @@ public:
     {
         mComponentManager = std::make_unique<ComponentManager>();
         mEntityManager = std::make_unique<EntityManager>();
-        mEventManager = std::make_unique<EventManager>();
         mSystemManager = std::make_unique<SystemManager>();
     }
 
@@ -101,25 +99,10 @@ public:
     }
 
 
-    // Event methods
-    void AddEventListener(EventId eventId, std::function<void(Event&)> const& listener)
-    {
-        mEventManager->AddListener(eventId, listener);
-    }
-
-    void SendEvent(Event& event)
-    {
-        mEventManager->SendEvent(event);
-    }
-
-    void SendEvent(EventId eventId)
-    {
-        mEventManager->SendEvent(eventId);
-    }
-
 private:
     std::unique_ptr<ComponentManager> mComponentManager;
     std::unique_ptr<EntityManager> mEntityManager;
-    std::unique_ptr<EventManager> mEventManager;
     std::unique_ptr<SystemManager> mSystemManager;
 };
+
+#endif //GALACTICWARS_COORDINATOR_H
