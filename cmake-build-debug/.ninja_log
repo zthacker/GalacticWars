@@ -1,0 +1,11 @@
+# ninja log v5
+7	942	7345762580243754	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
+963	1037	7345762581179719	GalacticWars.exe	f9dc528aa535c46f
+3	963	7345762580463740	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
+3	1146	7345830860636274	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
+9	1158	7345830860751858	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
+2	990	7345831067549702	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
+6	1062	7345831068274700	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
+2	911	7345831581105884	CMakeFiles/GalacticWars.dir/main.cpp.obj	4176bd4e8987662e
+6	1123	7345831583216455	CMakeFiles/GalacticWars.dir/Game.cpp.obj	7fd618af6fe77250
+1123	1246	7345831584419877	GalacticWars.exe	f9dc528aa535c46f

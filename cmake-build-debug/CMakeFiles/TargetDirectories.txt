@@ -1,0 +1,3 @@
+C:/Users/zthacker/GalacticWars/cmake-build-debug/CMakeFiles/GalacticWars.dir
+C:/Users/zthacker/GalacticWars/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/zthacker/GalacticWars/cmake-build-debug/CMakeFiles/rebuild_cache.dir
