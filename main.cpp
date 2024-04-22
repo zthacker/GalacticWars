@@ -1,28 +1,41 @@
-#include <iostream>
+
 #include "Game.h"
-#include "Components/Transform.h"
-#include "Systems/MovementSystem.h"
+#include <iostream>
+#include <chrono>
 
-Coordinator gCoordinator;
+using namespace std;
+using namespace chrono;
 
+
+//int main(int argc, char *argv[])
 int main(int argc, char *argv[]) {
-
-    gCoordinator.Init();
-
-    gCoordinator.RegisterComponent<Transform>();
-
-    auto mvSystem = gCoordinator.RegisterSystem<MovementSystem>();
-    {
-        Signature signature;
-        signature.set(gCoordinator.GetComponentType<Transform>());
-    }
-
-
     Game game;
-    while(game.m_is_running) {
-        game.read_input();
-        mvSystem->Update();
 
+    auto previous = system_clock::now();
+    float lag = 0.0;
+
+    while(game.IsRunning()) {
+        auto current = system_clock::now();
+        duration<float,milli> elapsed = current - previous;
+        previous = current;
+        lag += elapsed.count();
+
+        //do input
+        game.ProcessInput();
+
+        while(lag >= MS_PER_UPDATE) {
+            //lag being passed here, but not being used right now
+            game.Update(lag);
+            lag -= MS_PER_UPDATE;
+        }
+
+        game.Draw(lag / MS_PER_UPDATE);
+        game.LateUpdate(lag/MS_PER_UPDATE);
+
+        //Cap FPS
+        SDL_Delay(MS_PER_UPDATE - lag);
     }
+
+
     return 0;
 }

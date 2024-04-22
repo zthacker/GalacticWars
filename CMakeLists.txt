@@ -15,18 +15,27 @@ link_directories(${SDL2_LIB_DIR} ${SDL2_IMAGE_LIB_DIR})
 add_executable(GalacticWars main.cpp
         Game.h
         Game.cpp
-        Components/Transform.h
-        Math/Vec2.h
-        Core/EntityManager.h
-        Core/Types.h
-        Core/ComponentArray.h
-        Core/ComponentManager.h
-        Core/System.h
-        Core/SystemManager.h
-        Core/Coordinator.h
-        Systems/MovementSystem.h
-        Systems/MovementSystem.cpp
-        Components/Inputs.h
+        Window.h
+        Window.cpp
+        Bitmask.h
+        Bitmask.cpp
+        EnumHash.h
+        Scene.h
+        GameScene.h
+        GameScene.cpp
+        SceneStateMachine.h
+        SceneStateMachine.cpp
+        SceneStateMachine.cpp
+        GameObject.h
+        GameObject.cpp
+        TextureComponent.h
+        TextureComponent.cpp
+        TransformComponent.h
+        TransformComponent.cpp
+        PlayerInputComponent.h
+        PlayerInputComponent.cpp
+        KeyboardInput.h
+        KeyboardInput.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2 SDL2_image)

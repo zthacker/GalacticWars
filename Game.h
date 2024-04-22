@@ -8,8 +8,9 @@
 #include <iostream>
 #include "common.h"
 #include "defs.h"
-#include "Core/Coordinator.h"
-
+#include "Window.h"
+#include "SceneStateMachine.h"
+#include "GameScene.h"
 
 
 using namespace std;
@@ -17,30 +18,31 @@ using namespace std;
 class Game {
 public:
     Game();
+    ~Game() = default;
 
-    void update();
-    void render();
+    void ProcessInput();
+    void Update(float deltaTime);
+    void LateUpdate(float deltaTime);
+    void Draw(float deltaTime);
+    bool IsRunning() const;
+
     void read_input()
     {
         SDL_Event sdl_event;
         SDL_PollEvent(&sdl_event);
-        const Uint8* keystates = SDL_GetKeyboardState(NULL);
+        const Uint8* keystates = SDL_GetKeyboardState(nullptr);
 
         if (keystates[SDL_SCANCODE_ESCAPE] || sdl_event.type == SDL_QUIT) {
-            m_is_running = false;
+            m_isRunning = false;
         }
     }
 
-    bool m_is_running;
+
 private:
+    bool m_isRunning;
+    Window m_window;
 
-    void initializeSDL();
-    void initializePlayer();
-
-
-
-    SDL_Window* m_window;
-    SDL_Renderer* m_renderer;
+    SceneStateMachine sceneManager;
 
 };
 

@@ -63,12 +63,68 @@ build CMakeFiles/GalacticWars.dir/Game.cpp.obj: CXX_COMPILER__GalacticWars_unsca
   OBJECT_DIR = CMakeFiles\GalacticWars.dir
   OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
 
-build CMakeFiles/GalacticWars.dir/Systems/MovementSystem.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/Systems/MovementSystem.cpp || cmake_object_order_depends_target_GalacticWars
-  DEP_FILE = CMakeFiles\GalacticWars.dir\Systems\MovementSystem.cpp.obj.d
+build CMakeFiles/GalacticWars.dir/Window.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/Window.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\Window.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
   OBJECT_DIR = CMakeFiles\GalacticWars.dir
-  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir\Systems
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
+
+build CMakeFiles/GalacticWars.dir/Bitmask.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/Bitmask.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\Bitmask.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
+  OBJECT_DIR = CMakeFiles\GalacticWars.dir
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
+
+build CMakeFiles/GalacticWars.dir/GameScene.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/GameScene.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\GameScene.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
+  OBJECT_DIR = CMakeFiles\GalacticWars.dir
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
+
+build CMakeFiles/GalacticWars.dir/SceneStateMachine.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/SceneStateMachine.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\SceneStateMachine.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
+  OBJECT_DIR = CMakeFiles\GalacticWars.dir
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
+
+build CMakeFiles/GalacticWars.dir/GameObject.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/GameObject.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\GameObject.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
+  OBJECT_DIR = CMakeFiles\GalacticWars.dir
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
+
+build CMakeFiles/GalacticWars.dir/TextureComponent.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/TextureComponent.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\TextureComponent.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
+  OBJECT_DIR = CMakeFiles\GalacticWars.dir
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
+
+build CMakeFiles/GalacticWars.dir/TransformComponent.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/TransformComponent.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\TransformComponent.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
+  OBJECT_DIR = CMakeFiles\GalacticWars.dir
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
+
+build CMakeFiles/GalacticWars.dir/PlayerInputComponent.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/PlayerInputComponent.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\PlayerInputComponent.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
+  OBJECT_DIR = CMakeFiles\GalacticWars.dir
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
+
+build CMakeFiles/GalacticWars.dir/KeyboardInput.cpp.obj: CXX_COMPILER__GalacticWars_unscanned_Debug C$:/Users/zthacker/GalacticWars/KeyboardInput.cpp || cmake_object_order_depends_target_GalacticWars
+  DEP_FILE = CMakeFiles\GalacticWars.dir\KeyboardInput.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/libs/SDL/include -IC:/libs/SDL_image/include
+  OBJECT_DIR = CMakeFiles\GalacticWars.dir
+  OBJECT_FILE_DIR = CMakeFiles\GalacticWars.dir
 
 
 # =============================================================================
@@ -78,7 +134,7 @@ build CMakeFiles/GalacticWars.dir/Systems/MovementSystem.cpp.obj: CXX_COMPILER__
 #############################################
 # Link the executable GalacticWars.exe
 
-build GalacticWars.exe: CXX_EXECUTABLE_LINKER__GalacticWars_Debug CMakeFiles/GalacticWars.dir/main.cpp.obj CMakeFiles/GalacticWars.dir/Game.cpp.obj CMakeFiles/GalacticWars.dir/Systems/MovementSystem.cpp.obj
+build GalacticWars.exe: CXX_EXECUTABLE_LINKER__GalacticWars_Debug CMakeFiles/GalacticWars.dir/main.cpp.obj CMakeFiles/GalacticWars.dir/Game.cpp.obj CMakeFiles/GalacticWars.dir/Window.cpp.obj CMakeFiles/GalacticWars.dir/Bitmask.cpp.obj CMakeFiles/GalacticWars.dir/GameScene.cpp.obj CMakeFiles/GalacticWars.dir/SceneStateMachine.cpp.obj CMakeFiles/GalacticWars.dir/GameObject.cpp.obj CMakeFiles/GalacticWars.dir/TextureComponent.cpp.obj CMakeFiles/GalacticWars.dir/TransformComponent.cpp.obj CMakeFiles/GalacticWars.dir/PlayerInputComponent.cpp.obj CMakeFiles/GalacticWars.dir/KeyboardInput.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lSDL2main  -lSDL2  -lSDL2_image  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/libs/SDL/lib/x64   -LC:/libs/SDL_image/lib/x64
