@@ -2,19 +2,19 @@
 // Created by zthacker on 4/22/2024.
 //
 
-#include "PlayerInputComponent.h"
+#include "PlayerMovementComponent.h"
 
-PlayerInputComponent::PlayerInputComponent(GameObject *owner) : Component(owner), m_moveSpeed(8) {}
+PlayerMovementComponent::PlayerMovementComponent(GameObject *owner) : Component(owner), m_moveSpeed(8) {}
 
-void PlayerInputComponent::SetInput(KeyboardInput *input) {
+void PlayerMovementComponent::SetInput(KeyboardInput *input) {
     this->m_input = input;
 }
 
-void PlayerInputComponent::SetMovementSpeed(float moveSpeed) {
+void PlayerMovementComponent::SetMovementSpeed(float moveSpeed) {
     this->m_moveSpeed = moveSpeed;
 }
 
-void PlayerInputComponent::Update(float deltaTime) {
+void PlayerMovementComponent::Update(float deltaTime) {
     if(m_input == nullptr) {
         //TODO log something here maybe
         printf("input is null");
@@ -31,7 +31,6 @@ void PlayerInputComponent::Update(float deltaTime) {
     {
         xMove = m_moveSpeed;
     }
-
 
     //do Y's
     float yMove = 0;

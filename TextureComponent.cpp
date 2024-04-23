@@ -22,3 +22,5 @@ void TextureComponent::LateUpdate(float deltaTime) {
     x = m_owner->transform->GetX();
     y = m_owner->transform->GetY();
 }
+
+

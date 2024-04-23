@@ -28,9 +28,9 @@ int main(int argc, char *argv[]) {
             game.Update(lag);
             lag -= MS_PER_UPDATE;
         }
-
-        game.Draw(lag / MS_PER_UPDATE);
         game.LateUpdate(lag/MS_PER_UPDATE);
+        game.Draw(lag / MS_PER_UPDATE);
+
 
         //Cap FPS
         SDL_Delay(MS_PER_UPDATE - lag);

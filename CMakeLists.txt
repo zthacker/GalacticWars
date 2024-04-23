@@ -32,10 +32,14 @@ add_executable(GalacticWars main.cpp
         TextureComponent.cpp
         TransformComponent.h
         TransformComponent.cpp
-        PlayerInputComponent.h
-        PlayerInputComponent.cpp
+        PlayerMovementComponent.h
+        PlayerMovementComponent.cpp
         KeyboardInput.h
         KeyboardInput.cpp
+        BackgroundMovementComponent.h
+        BackgroundMovementComponent.cpp
+        BackgroundTextureComponent.h
+        BackgroundTextureComponent.cpp
 )
 
 target_link_libraries(${PROJECT_NAME} SDL2main SDL2 SDL2_image)

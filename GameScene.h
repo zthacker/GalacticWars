@@ -26,9 +26,10 @@ public:
     void Draw(Window& window, float deltaTime) override;
 
 private:
-    std::shared_ptr<GameObject> player{};
+    std::shared_ptr<GameObject> m_player{};
+    std::shared_ptr<GameObject> m_background{};
 
-    KeyboardInput input;
+    KeyboardInput m_input;
 };
 
 

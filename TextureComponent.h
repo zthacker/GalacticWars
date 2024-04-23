@@ -12,7 +12,7 @@
 class GameObject;
 
 using namespace std;
-
+//TODO probably want some sort of ResourceAllocator for this
 class TextureComponent : public Component {
 public:
     explicit TextureComponent(GameObject* owner) : Component(owner){};

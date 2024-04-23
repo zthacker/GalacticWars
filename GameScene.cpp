@@ -4,7 +4,9 @@
 
 #include "GameScene.h"
 #include "Game.h"
-#include "PlayerInputComponent.h"
+#include "PlayerMovementComponent.h"
+#include "BackgroundTextureComponent.h"
+#include "BackgroundMovementComponent.h"
 
 class Game;
 
@@ -20,20 +22,25 @@ void GameScene::OnCreate(Window& window) {
     //We can have OnCreate take in a Window object to then pass over to the Component, which is what
     //We're doing now.
     //This traces all the way back to Game and Scene::OnCreate. SceneStateMachine::Add()
-    player = make_shared<GameObject>();
-    player->transform->SetY(SCREEN_HEIGHT / 2);
+    m_player = make_shared<GameObject>();
+    m_player->transform->SetY(SCREEN_HEIGHT / 2);
 
     //TODO Debug checking here basically, probably tidy this up at some point
-    if(player) {
-        auto texture = player->AddComponent<TextureComponent>();
+    if(m_player) {
+        auto texture = m_player->AddComponent<TextureComponent>();
         //TODO need to find out why this isn't loading in current gfx dir
         texture->Load(window, R"(C:\Users\zthacker\laserlibre\gfx\player.png)");
 
-        auto movement = player->AddComponent<PlayerInputComponent>();
-        movement->SetInput(&input);
+        auto movement = m_player->AddComponent<PlayerMovementComponent>();
+        movement->SetInput(&m_input);
     } else {
         exit(0);
     }
+
+    m_background = make_shared<GameObject>();
+    auto bkgTextureComponent = m_background->AddComponent<BackgroundTextureComponent>();
+    bkgTextureComponent->Load(window, R"(C:\Users\zthacker\laserlibre\gfx\background.png)");
+    m_background->AddComponent<BackgroundMovementComponent>();
 
 
 }
@@ -43,18 +50,21 @@ void GameScene::OnDestroy() {
 }
 
 void GameScene::ProcessInput() {
-    input.Update();
+    m_input.Update();
 }
 
 void GameScene::Update(float deltaTime) {
-    player->Update(deltaTime);
+    m_background->Update(deltaTime);
+    m_player->Update(deltaTime);
 }
 
 void GameScene::LateUpdate(float deltaTime) {
-    player->LateUpdate(deltaTime);
+    m_background->LateUpdate(deltaTime);
+    m_player->LateUpdate(deltaTime);
 }
 
 void GameScene::Draw(Window& window, float deltaTime) {
-    player->Draw(window, deltaTime);
+    m_background->Draw(window, deltaTime);
+    m_player->Draw(window, deltaTime);
 }
 
